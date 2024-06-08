@@ -21,7 +21,7 @@ function App() {
       <h1 className="text-center text-[18px] font-[800]">Who sang this song?</h1>
       <Input onChange={(e) => handleSearch(e.target.value)} type="text" className='my-2' />
         <Button disabled={!search} onClick={handleResult} className='w-full rounded-md'>
-          Search {search && `for ${search}`}
+          Search
         </Button>
         {search && <Results songs={songs} />}
       </div>
